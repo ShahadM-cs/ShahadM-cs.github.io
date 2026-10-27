@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shahad Aljohani | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F2F5F7;--card:#FFFFFF;--ink:#10242E;--mute:#52666F;--line:#CBD6DC;--teal:#0E7C86;--amber:#B97F00;--bar:#D6E6E8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0F1B21;--card:#16262E;--ink:#E7EEF1;--mute:#9DB0B8;--line:#2B3F48;--teal:#4FC3CC;--amber:#F0B429;--bar:#22424A;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0F1B21;--card:#16262E;--ink:#E7EEF1;--mute:#9DB0B8;--line:#2B3F48;--teal:#4FC3CC;--amber:#F0B429;--bar:#22424A;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Playfair Display","IBM Plex Sans Arabic",Georgia,serif;font-variant-numeric:lining-nums;line-height:1.7;font-size:17px}
+html[lang="ar"] body{font-family:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif}
+html[lang="ar"] .en,html[lang="en"] .ar{display:none}
+.wrap{max-width:860px;margin-inline:auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+header nav a{color:var(--mute);text-decoration:none;margin-inline-end:18px;font-size:15px}
+header nav a:hover{color:var(--teal)}
+button{font:inherit;cursor:pointer;border:1px solid var(--teal);background:transparent;color:var(--teal);padding:4px 14px;border-radius:6px;font-weight:600}
+button:focus-visible,a:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.hero{padding:64px 0 40px}
+h1{font-size:clamp(36px,7vw,60px);line-height:1.1;margin:0 0 14px;font-weight:700}
+.lead{font-size:clamp(19px,3vw,23px);max-width:34em;margin:0 0 22px;color:var(--mute)}
+.links a{display:inline-block;margin-inline-end:10px;margin-bottom:8px;padding:8px 16px;border:1px solid var(--teal);border-radius:6px;color:var(--teal);text-decoration:none;font-weight:600}
+.links a.main{background:var(--teal);color:var(--paper)}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;margin:0 0 6px}
+h3{font-size:19px;margin:26px 0 8px}
+p{margin:0 0 12px;max-width:44em}
+.sub{color:var(--mute)}
+.role{border-inline-start:4px solid var(--teal);padding:4px 16px;margin:18px 0;background:var(--card)}
+.bars{margin:14px 0}
+.bar{margin:14px 0}
+.bar .t{display:flex;justify-content:space-between;gap:14px;font-size:15px}
+.bar .t b{color:var(--teal);font-size:20px}
+.bar .track{height:10px;background:var(--bar);border-radius:5px;overflow:hidden;margin-top:4px}
+.bar .fill{height:100%;background:var(--teal)}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;background:var(--card)}
+th,td{padding:9px 12px;border:1px solid var(--line);text-align:start;vertical-align:top;font-size:15px}
+th{background:var(--bar)}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:14px 0}
+.shot{border:2px dashed var(--line);border-radius:10px;min-height:200px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;color:var(--mute);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.chips span{border:1px solid var(--teal);border-radius:6px;padding:2px 10px;font-family:ui-monospace,Consolas,monospace;font-size:14px;background:var(--card)}
+pre{direction:ltr;text-align:left;background:var(--card);border:1px solid var(--line);padding:14px;overflow-x:auto;font-size:13.5px;line-height:1.55;border-radius:8px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:14px 0}
+.stat{background:var(--card);border:1px solid var(--line);padding:14px;border-radius:8px}
+.stat b{display:block;font-size:30px;color:var(--teal);line-height:1.2}
+.soon{border:2px dashed var(--amber);border-radius:10px;padding:18px;background:var(--card)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.skills ul{margin:6px 0 0;padding-inline-start:20px}
+footer{padding:28px 0 40px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:no-preference){.fill{transition:width .8s ease}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<nav>
+<a href="#project"><span class="en">Graduation project</span><span class="ar">مشروع التخرج</span></a>
+<a href="#dashboard"><span class="en">Data analysis</span><span class="ar">تحليل البيانات</span></a>
+<a href="#skills"><span class="en">Skills</span><span class="ar">المهارات</span></a>
+</nav>
+<button id="lang" type="button" aria-label="Switch language"><span class="en">العربية</span><span class="ar">English</span></button>
+</header>
+
+<div class="hero">
+<h1><span class="en">Shahad Aljohani</span><span class="ar">شهد الجهني</span></h1>
+<p class="lead">
+<span class="en">Computer Science graduate focused on systems analysis, data analysis, and databases. I turn user needs into clear requirements, designs, and data models.</span>
+<span class="ar">خريجة علوم حاسب، تركيزي على تحليل النظم وتحليل البيانات وقواعد البيانات. أحوّل احتياجات المستخدمين إلى متطلبات وتصاميم ونماذج بيانات واضحة.</span>
+</p>
+<div class="links">
+<a class="main" href="https://www.linkedin.com/in/shahad-aljohani-cs">LinkedIn</a>
+<a href="mailto:shahadmarjuh@gmail.com">shahadmarjuh@gmail.com</a>
+</div>
+</div>
+
+<section id="project">
+<h2><span class="en">AI Is Your Eye</span><span class="ar">AI Is Your Eye</span></h2>
+<p class="sub"><span class="en">Graduation project · BSc Computer Science, Taibah University · Team of 7 · 2024</span><span class="ar">مشروع التخرج · بكالوريوس علوم الحاسب، جامعة طيبة · فريق من 7 · 2024</span></p>
+<p>
+<span class="en">Blind people struggle with spatial awareness and object recognition, and canes or companions are not always available. We built an Android app that detects nearby objects with YOLO and announces their names by voice. A guardian app shows the user’s location and phone battery.</span>
+<span class="ar">يواجه المكفوفون صعوبة في إدراك المكان والتعرف على الأشياء، والعصا أو المرافق ليسوا متاحين دائمًا. بنينا تطبيق أندرويد يكتشف الأشياء القريبة باستخدام YOLO وينطق أسماءها صوتيًا، وتطبيقًا للمرافق يعرض موقع المستخدم ومستوى بطارية جواله.</span>
+</p>
+<div class="role">
+<b><span class="en">My role</span><span class="ar">دوري</span></b><br>
+<span class="en">Systems analyst on the team. I wrote the problem statement, led requirements gathering (brainstorming and a 51-response survey), analyzed project risks, co-designed the app interfaces, ran usability testing, and wrote the SQL scripts that create the database tables.</span>
+<span class="ar">محللة نظم ضمن الفريق. كتبت تعريف المشكلة، وقدت جمع المتطلبات (عصف ذهني واستبيان بـ 51 مشاركًا)، وحلّلت مخاطر المشروع، وشاركت في تصميم الواجهات، ونفذت اختبار قابلية الاستخدام، وكتبت سكربتات SQL لإنشاء جداول قاعدة البيانات.</span>
+</div>
+
+<h3><span class="en">Requirements: what the survey told us</span><span class="ar">المتطلبات: ماذا قال الاستبيان</span></h3>
+<p class="sub"><span class="en">Google Forms, shared with blind people, relatives, ophthalmologists, and faculty (51 responses).</span><span class="ar">عبر Google Forms، وُزّع على مكفوفين وأقارب ومختصي عيون وأعضاء هيئة تدريس (51 مشاركًا).</span></p>
+<div class="bars">
+<div class="bar"><div class="t"><span><span class="en">Support smart glasses that identify objects while moving</span><span class="ar">يدعمون فكرة نظارة ذكية تتعرف على الأشياء أثناء الحركة</span></span><b>98%</b></div><div class="track"><div class="fill" style="width:98%"></div></div></div>
+<div class="bar"><div class="t"><span><span class="en">Prefer opening the app with a double press of a physical button</span><span class="ar">يفضلون تشغيل التطبيق بضغطتين على زر فعلي</span></span><b>94%</b></div><div class="track"><div class="fill" style="width:94%"></div></div></div>
+<div class="bar"><div class="t"><span><span class="en">Want customizable settings such as detection distance</span><span class="ar">يريدون إعدادات قابلة للتخصيص مثل مسافة الاكتشاف</span></span><b>94%</b></div><div class="track"><div class="fill" style="width:94%"></div></div></div>
+</div>
+<div class="scroll"><table>
+<tr><th><span class="en">Finding</span><span class="ar">النتيجة</span></th><th><span class="en">Requirement it produced</span><span class="ar">المتطلب الناتج</span></th></tr>
+<tr><td><span class="en">98% support the idea</span><span class="ar">98% يدعمون الفكرة</span></td><td><span class="en">Real-time object detection with spoken output</span><span class="ar">اكتشاف الأشياء لحظيًا مع نطق الاسم</span></td></tr>
+<tr><td><span class="en">94% prefer button launch</span><span class="ar">94% يفضلون التشغيل بالأزرار</span></td><td><span class="en">Open and close the app with physical buttons</span><span class="ar">فتح التطبيق وإغلاقه بالأزرار الفعلية</span></td></tr>
+<tr><td><span class="en">94% want settings, with varied preferred distances</span><span class="ar">94% يريدون إعدادات، وتنوعت المسافات المفضلة</span></td><td><span class="en">Customizable detection distance</span><span class="ar">تخصيص مسافة الاكتشاف</span></td></tr>
+<tr><td><span class="en">Brainstorming with the supervisor</span><span class="ar">العصف الذهني مع المشرف</span></td><td><span class="en">Guardian tracking of location and battery</span><span class="ar">تتبع المرافق للموقع والبطارية</span></td></tr>
+</table></div>
+
+<h3><span class="en">Risk analysis</span><span class="ar">تحليل المخاطر</span></h3>
+<p><span class="en">I identified 7 risks, rated their probability, and defined a mitigation for each. Four examples:</span><span class="ar">حددت 7 مخاطر، وقيّمت احتمالية حدوثها، ووضعت معالجة لكل منها. أربعة أمثلة:</span></p>
+<div class="scroll"><table>
+<tr><th><span class="en">Risk</span><span class="ar">الخطر</span></th><th><span class="en">Probability</span><span class="ar">الاحتمالية</span></th><th><span class="en">Mitigation</span><span class="ar">المعالجة</span></th></tr>
+<tr><td><span class="en">No smart-glasses hardware</span><span class="ar">عدم توفر عتاد النظارة</span></td><td><span class="en">High</span><span class="ar">عالية</span></td><td><span class="en">Simulate with the phone camera</span><span class="ar">المحاكاة بكاميرا الجوال</span></td></tr>
+<tr><td><span class="en">Lack of ML experience</span><span class="ar">قلة الخبرة في تعلم الآلة</span></td><td><span class="en">High</span><span class="ar">عالية</span></td><td><span class="en">Online courses and early supervisor feedback</span><span class="ar">دورات إلكترونية وتغذية راجعة مبكرة من المشرف</span></td></tr>
+<tr><td><span class="en">Requirement changes</span><span class="ar">تعديل المتطلبات</span></td><td><span class="en">Medium</span><span class="ar">متوسطة</span></td><td><span class="en">Split tasks and move to an Agile approach</span><span class="ar">توزيع المهام والتحول إلى منهجية Agile</span></td></tr>
+<tr><td><span class="en">Model failure</span><span class="ar">فشل النموذج</span></td><td><span class="en">Low</span><span class="ar">منخفضة</span></td><td><span class="en">Fall back to TensorFlow Lite</span><span class="ar">استخدام TensorFlow Lite كبديل</span></td></tr>
+</table></div>
+
+<h3><span class="en">Interface design</span><span class="ar">تصميم الواجهات</span></h3>
+<p><span class="en">Co-designed with a teammate around accessibility: high contrast, large bold text, simple navigation, and audio feedback.</span><span class="ar">صممتها مع زميلة بتركيز على إمكانية الوصول: تباين عالٍ، خط كبير وواضح، تنقل بسيط، وتنبيهات صوتية.</span></p>
+<div class="shots">
+<div class="shot"><span class="en">Welcome screen<br>(add screenshot)</span><span class="ar">شاشة الترحيب<br>(أضيفي لقطة)</span></div>
+<div class="shot"><span class="en">Login<br>(add screenshot)</span><span class="ar">تسجيل الدخول<br>(أضيفي لقطة)</span></div>
+<div class="shot"><span class="en">Guardian home<br>(add screenshot)</span><span class="ar">الصفحة الرئيسية للمرافق<br>(أضيفي لقطة)</span></div>
+<div class="shot"><span class="en">Blind user home<br>(add screenshot)</span><span class="ar">الصفحة الرئيسية للمكفوف<br>(أضيفي لقطة)</span></div>
+</div>
+
+<h3><span class="en">Database</span><span class="ar">قاعدة البيانات</span></h3>
+<p><span class="en">I identified the tables the system needed and wrote the SQL scripts that create all 10 tables in MySQL, hosted on PythonAnywhere. Teammates worked on the ERD, schema diagram, and relationship constraints.</span><span class="ar">حددت الجداول التي يحتاجها النظام وكتبت سكربتات SQL التي تنشئ الجداول العشرة في MySQL على PythonAnywhere. عملت الزميلات على مخطط ER ومخطط العلاقات وقيود الربط.</span></p>
+<div class="chips"><span>user</span><span>admin</span><span>privilege</span><span>management</span><span>guardian</span><span>phones</span><span>blind</span><span>guardianblind</span><span>location_history</span><span>battery_level_history</span></div>
+<p class="sub"><span class="en">Example: the table that links a guardian to a blind user. The UNIQUE key prevents duplicate links.</span><span class="ar">مثال: الجدول الذي يربط المرافق بالمكفوف. المفتاح الفريد يمنع تكرار الربط.</span></p>
+<pre>CREATE TABLE IF NOT EXISTS `guardianblind` (
+  `blind_id` int(11) NOT NULL,
+  `guardian_id` int(11) NOT NULL,
+  `jdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `status` int(1) NOT NULL DEFAULT '0',
+  UNIQUE KEY `blind_id` (`blind_id`,`guardian_id`)
+);</pre>
+
+<h3><span class="en">Usability testing</span><span class="ar">اختبار قابلية الاستخدام</span></h3>
+<p><span class="en">Five volunteers used the guardian app and answered a short questionnaire. For the blind-user app, volunteers closed their eyes to simulate the experience.</span><span class="ar">استخدم خمسة متطوعين تطبيق المرافق وأجابوا عن استبيان قصير. أما تطبيق المكفوف فجرّبه المتطوعون وأعينهم مغمضة لمحاكاة التجربة.</span></p>
+<div class="stats">
+<div class="stat"><b>5 / 5</b><span class="en">found the menu clear and easy to use</span><span class="ar">وجدوا القائمة واضحة وسهلة</span></div>
+<div class="stat"><b>4 / 5</b><span class="en">navigated to features easily</span><span class="ar">تنقلوا بين الخدمات بسهولة</span></div>
+<div class="stat"><b>4 / 5</b><span class="en">had no trouble finding information</span><span class="ar">لم يواجهوا صعوبة في إيجاد المعلومات</span></div>
+</div>
+</section>
+
+<section id="dashboard">
+<h2><span class="en">Data cleaning and Power BI analysis</span><span class="ar">تنظيف البيانات وتحليلها في Power BI</span></h2>
+<div class="soon">
+<span class="en">Coming soon: a cleaned dataset, the steps I followed, and an interactive dashboard answering specific business questions.</span>
+<span class="ar">قريبًا: بيانات منظفة، وخطوات التنظيف، ولوحة تفاعلية تجيب عن أسئلة محددة.</span>
+</div>
+</section>
+
+<section id="skills">
+<h2><span class="en">Skills</span><span class="ar">المهارات</span></h2>
+<div class="skills">
+<div><b><span class="en">Data and databases</span><span class="ar">البيانات وقواعد البيانات</span></b><ul><li>SQL</li><li>Power BI</li><li>Microsoft Excel</li><li><span class="en">Data analysis and cleaning</span><span class="ar">تحليل البيانات وتنظيفها</span></li><li><span class="en">Database design</span><span class="ar">تصميم قواعد البيانات</span></li></ul></div>
+<div><b><span class="en">Systems analysis</span><span class="ar">تحليل النظم</span></b><ul><li><span class="en">Requirements gathering</span><span class="ar">جمع المتطلبات</span></li><li><span class="en">Risk analysis</span><span class="ar">تحليل المخاطر</span></li><li><span class="en">Interface design</span><span class="ar">تصميم الواجهات</span></li><li><span class="en">Usability testing</span><span class="ar">اختبار قابلية الاستخدام</span></li></ul></div>
+<div><b><span class="en">Other</span><span class="ar">أخرى</span></b><ul><li>Java</li><li><span class="en">SAP (basic)</span><span class="ar">SAP (أساسي)</span></li><li><span class="en">Web development fundamentals</span><span class="ar">أساسيات تطوير الويب</span></li><li><span class="en">Arabic, English</span><span class="ar">العربية، الإنجليزية</span></li></ul></div>
+</div>
+</section>
+
+<footer>
+<span class="en">BSc Computer Science, Taibah University, 2019–2024 · GPA 4.44 / 5</span>
+<span class="ar">بكالوريوس علوم الحاسب، جامعة طيبة، 2019–2024 · المعدل 4.44 من 5</span>
+</footer>
+</div>
+<script>
+(function(){
+var b=document.getElementById('lang'),h=document.documentElement;
+b.addEventListener('click',function(){
+var ar=h.lang==='en';
+h.lang=ar?'ar':'en';h.dir=ar?'rtl':'ltr';
+});
+})();
+</script>
+</body>
+</html>
